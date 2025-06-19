@@ -73,7 +73,7 @@ header {
 
 
 .home__img {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(site4/img/image-landscape-5d72b8db-b066-42ad-b7e8-c170a1e0d19f-default_0.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/image-landscape-5d72b8db-b066-42ad-b7e8-c170a1e0d19f-default_0.jpg);
     background-size: cover;
     background-position: center center;
     width: 100%;
@@ -688,7 +688,7 @@ span {
 
 .image-half {
     flex: 1;
-    background: url('site4/img/i.jpg') no-repeat center center;
+    background: url('img/i.jpg') no-repeat center center;
     background-size: cover;
     height: 100%;
     width:auto;
