@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/site3/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bounce.js/1.0.0/bounce.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bounce.js/1.0.0/bounce.min.js"></script>
+</head>
+
+<body>
+    <header>
+
+        <div class="container container_solid">
+            <div class="title_wrapper">
+                <h1>РОССИЯ</h1>
+            </div>
+        </div>
+
+
+        <div class="container container_image" aria-hidden="true">
+            <div class="title_wrapper">
+                <h1>РОССИЯ</h1>
+                <p class="subtitle__head">путешествуем вместе</p>
+                <img src="/site3/img/arrows.png" alt="" class="bounce">
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/gh/postnikovmd/tilda@1.3/mods.min.js"></script>
+
+    </header>
+
+    <div class="second__block">
+
+        <div class="container1">
+            <div class="text__second">
+                <h2 class="title__second"> <span>МЫ</span> - ваш комфортый отдых в <span>России!</span></h2>
+                <p class="subtitle__second">Откройте для себя неизведанные уголки нашей страны с командой опытных
+                    путешественников. Мы знаем Россию изнутри и готовы поделиться с вами ее красотой и тайнами.</p>
+            </div>
+           
+        </div>
+         
+    </div>
+<h3 class="title__card">Популярные направления</h3>
+    <div class="third__block">
+        <div class="carousel-container">
+            <button class="prev-btn">‹</button>
+            <div class="carousel">
+                <div class="carousel-wrapper">
+                    <div class="card"><a href="/site3/altay.html"><img src="/site3/img/Алтай.png" alt="Фото 1"></a></div>
+                    <div class="card"><a href="/site3/dag.html"><img src="/site3/img/Дагестан.png" alt="Фото 2"></a></div>
+                    <div class="card"><a href="/site3/kamchatka.html"><img src="/site3/img/Камчатка.png" alt="Фото 3"></a></div>
+                    <div class="card"><a href="/site3/albr.html"><img src="/site3/img/Эльбрус.png" alt="Фото 4"></a></div>
+                </div>
+            </div>
+            <button class="next-btn">›</button>
+        </div>
+
+    </div>
+
+    <a href="/site3/about.html"><button class="about__btn">Наша команда</button></a>
+
+
+    <h4 class="back__title">РОССИЯ</h4>
+    <div class="form__block">
+        <form action="#" class="form" id="contactForm">
+            <h3 class="form__title">Задайте свой вопрос!</h3>
+            <input type="text" placeholder="Имя" class="form__input" id="name" />
+           
+    
+            <input type="text" placeholder="Телефон" class="form__input" id="phone" />
+
+    
+            <input type="text" placeholder="Сообщение" class="form__input" id="Text" />
+          
+            <button class="btn__form" type="submit">Отправить</button>
+        </form>
+    </div>
+    
+    <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Получаем значения полей
+        const formData = {
+            name: document.getElementById('name').value,
+            phone: document.getElementById('phone').value,
+            text: document.getElementById('Text').value,
+            timestamp: new Date().toISOString()
+        };
+        
+        // Получаем существующие данные из localStorage или создаем новый массив
+        let savedForms = JSON.parse(localStorage.getItem('contactForms')) || [];
+        
+        // Добавляем новые данные
+        savedForms.push(formData);
+        
+        // Сохраняем в localStorage
+        localStorage.setItem('contactForms', JSON.stringify(savedForms));
+        
+        // Очищаем форму
+        this.reset();
+        
+        // Оповещение об успешной отправке
+        alert('Сообщение сохранено!');
+    });
+    </script>
+
+
+    <footer>
+        
+        <div class="footer__text">
+            <p class="footer__title">Телефон</p>
+            <p class="footer__title">+7999111111</p>
+            <div class="icons">
+                <img src="/site3/img/inst.png" alt="">
+                <img src="/site3/img/wats.png" alt="">
+                <img src="/site3/img/vk.png" alt="">
+            </div>
+        </div>
+        <h5 class="footer__title__back">РОССИЯ</h5>
+    </footer>
+
+
+    <script src="/site3/script.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+   
+</body>
+
+</html>

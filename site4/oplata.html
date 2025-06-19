@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница оплаты</title>
+    <link rel="stylesheet" href="/site4/oplata.css">
+</head>
+<body>
+    
+    <div class="payment-container">
+        <a href="/site4/index.html"><h2>all.</h2></a>
+        <form id="payment-form">
+            <div class="form-group">
+                <label for="card-name">Name</label>
+                <input type="text" id="card-name" placeholder="Enter the name of the cardholder" required>
+            </div>
+
+            <div class="form-group">
+                <label for="card-number">Card number</label>
+                <input type="text" id="card-number" placeholder="Enter the card number" maxlength="16" required>
+            </div>
+
+            <div class="form-group">
+                <label for="expiry-date">Validity period</label>
+                <input type="text" id="expiry-date" placeholder="ММ/YY" maxlength="4" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" placeholder="CVV" maxlength="3" required>
+            </div>
+
+            <div class="form-group">
+                <label for="subscription-type">Subscription type</label>
+                <select id="subscription-type" required>
+                    <option value="monthly">For 1 month</option>
+                    <option value="3months">For 3 months</option>
+                    <option value="6months">For 6 months</option>
+                </select>
+            </div>
+
+            <button type="submit" class="submit-btn">15$</button>
+        </form>
+
+        <div id="payment-status" class="payment-status"></div>
+    </div>
+
+    
+
+    <script src="/site4/script.js"></script>
+</body>
+</html>

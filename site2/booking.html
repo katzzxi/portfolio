@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запись на услуги - LUMI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+</head>
+<body>
+    <!-- Шапка с навигацией -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-left">
+                <a href="index.html">Главная</a>
+                <a href="services.html">Услуги</a>
+                <a href="specialists.html">Специалисты</a>
+            </div>
+            <a href="1.html" class="logo">LUMI</a>
+            <div class="nav-right">
+                <a href="news-gallery.html">Новости</a>
+                <a href="contacts.html">Контакты</a>
+                <a href="booking.html" class="booking-btn active">Запись</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="main">
+        <section class="booking-section">
+            <h2>Запись на услуги</h2>
+           
+            <form id="booking-form" class="booking-form">
+                <div class="form-group">
+                    <label for="service">Выберите услугу</label>
+                    <select id="service" name="service" required>
+                        <option value="" disabled selected>Выберите услугу</option>
+                        <option value="Маникюр">Маникюр</option>
+                        <option value="Макияж">Макияж</option>
+                        <option value="Стрижка">Стрижка</option>
+                        <option value="Оформление бровей">Оформление бровей</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" id="name" name="name" required placeholder="Введите ваше имя">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Телефон</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="+7 (XXX) XXX-XX-XX" >
+                </div>
+                <div class="form-group">
+                    <label for="date">Дата</label>
+                    <input type="date" id="date" name="date" required min="2025-05-18">
+                </div>
+                <div class="form-group">
+                    <label for="time">Время</label>
+                    <select id="time" name="time" required>
+                        <option value="" disabled selected>Выберите время</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn" style="color: black;" >Записаться</button>
+            </form>
+
+            <!-- Список записей -->
+            <div class="appointments-section">
+                <h3>Ваши записи</h3>
+                <ul id="appointments-list" class="appointments-list"></ul>
+                <p id="no-appointments" class="no-appointments">Нет записей</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer>
+        <div class="footer-links">
+            <a href="1.html" class="logo">LUMI</a>
+            <a href="1.html">Главная</a>
+            <a href="services.html">Услуги</a>
+            <a href="specialists.html">Специалисты</a>
+            <a href="news-gallery.html">Новости</a>
+            <a href="contacts.html">Контакты</a>
+        </div>
+        <div class="footer-contact">
+            <p>Москва, Гнездниковский пер., 10</p>
+            <p>89098678978</p>
+            <p>Пн–Вс 10:00–22:00</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

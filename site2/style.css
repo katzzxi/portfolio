@@ -1,0 +1,1780 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+}
+
+.header {
+    background: #333;
+    color: white;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+.header.hide {
+    transform: translateY(-100%);
+}
+
+.nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    gap: 2rem;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.nav-right {
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #d93a6c;
+    transition: width 0.3s ease;
+}
+
+.nav a:hover::after, .nav a.active::after {
+    width: 100%;
+}
+
+.nav a:hover {
+    color: #d93a6c;
+}
+
+.nav a.active {
+    color: #d93a6c;
+}
+
+a.logo {
+    font-family: "Italiana", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    color: #ffffff;
+    margin: 0 2rem;
+    text-decoration: none;
+}
+
+.main {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.bg video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(60%);
+}
+
+.content {
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+}
+
+.content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    color: #fff;
+}
+
+.btn {
+    display: inline-block;
+    border: white 2px solid;
+    color: white;
+    font-weight: 400;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    transition: transform 0.3s ease, background 0.3s ease, border-color 0.3s ease;
+}
+
+.btn:hover {
+    background: #00000071;
+    border-color: #000000;
+    transform: scale(1.05) translateY(-5px);
+}
+
+@media (max-width: 768px) {
+    .content h1 {
+        font-size: 1.8rem;
+    }
+    .nav {
+        gap: 1rem;
+    }
+}
+
+.video-buttons {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+.video-btn {
+    flex: 1;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    border: 2px solid white;
+    transition: background 0.3s, border-color 0.3s;
+}
+
+.video-btn:hover {
+    background: rgba(0, 0, 0, 0.5);
+    border-color: #000000;
+}
+
+
+        .ideology-section {
+            max-width: 800px;
+            text-align: center;
+            padding: 2rem;
+            background: #b24265;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+            margin: 20px auto;
+        }
+
+        .ideology-section h2 {
+            font-family: "Italiana", sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: #ffffff;
+        }
+
+        .ideology-section p {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 400;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #e0e0e0;
+        }
+
+        .services-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 0;
+            position: relative;
+        }
+
+        .services-section h2 {
+            font-family: "Italiana", sans-serif;
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #ffffff;
+        }
+
+        .service-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 4rem;
+            gap: 2rem;
+        }
+
+        .service-item:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .service-image {
+            flex: 1;
+            max-width: 40%;
+            height: 400px;
+            background: #ffffff;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .service-image:hover {
+            transform: scale(1.02);
+        }
+
+        .service-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .service-content {
+            flex: 1;
+            padding: 1rem;
+        }
+
+        .service-content h3 {
+            font-family: "Italiana", sans-serif;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #ffffff;
+        }
+
+        .service-content p {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 400;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #dedede;
+        }
+
+        .background-number {
+            position: absolute;
+            font-family: "Italiana", sans-serif;
+            font-size: 15rem;
+            color: #d93a6c80;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .number-1 { top: 5%; left: 2%; }
+        .number-2 { top: 25%; right: 2%; }
+        .number-3 { top: 45%; left: 2%; }
+        .number-4 { top: 65%; right: 2%; }
+
+
+@keyframes fadeInNumber {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .services-section h2 {
+        font-size: 2rem;
+    }
+
+    .service-item {
+        flex-direction: column;
+        text-align: center;
+        transform: translateY(50px);
+    }
+
+    .service-item:nth-child(even) {
+        flex-direction: column;
+        transform: translateY(50px);
+    }
+
+    .service-image {
+        max-width: 100%;
+        height: 200px;
+    }
+
+    .service-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .service-content p {
+        font-size: 1rem;
+    }
+
+    .background-number {
+        font-size: 6rem;
+        top: auto;
+    }
+
+    .number-1 { top: 10%; left: 5%; }
+    .number-2 { top: 30%; right: 5%; }
+    .number-3 { top: 50%; left: 5%; }
+    .number-4 { top: 70%; right: 5%; }
+}
+
+footer {
+    background: #171717;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.footer-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Italiana", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: color 0.3s;
+    align-items: center;
+    display: flex;
+}
+
+.footer-links a:hover {
+    color: #ccc;
+}
+
+.footer-contact {
+    text-align: right;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+.footer-contact p {
+    margin: 0;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .footer-contact {
+        text-align: center;
+    }
+}
+
+a.logo {
+    font-family: "Italiana", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    color: #ffffff;
+}
+
+@keyframes expand {
+    from { max-height: 0; opacity: 0; }
+    to { max-height: 1000px; opacity: 1; }
+}
+
+@keyframes collapse {
+    from { max-height: 1000px; opacity: 1; }
+    to { max-height: 0; opacity: 0; }
+}
+
+/* Стили для страницы услуг */
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    scroll-behavior: smooth;
+}
+
+.header {
+    background: #333;
+    color: white;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    gap: 2rem;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.nav-right {
+    justify-content: flex-start;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #d93a6c;
+    transition: width 0.3s ease;
+}
+
+.nav a:hover::after, .nav a.active::after {
+    width: 100%;
+}
+
+.nav a:hover {
+    color: #d93a6c;
+}
+
+.nav a.active {
+    color: #d93a6c;
+}
+
+a.logo {
+    font-family: "Italiana", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    color: #ffffff;
+    margin: 0 2rem;
+    text-decoration: none;
+}
+
+.main {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+
+.services-list-section {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 2rem;
+    color: #ffffff;
+}
+
+.services-list-section h2 {
+    font-family: "Italiana", sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.services-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.service-category {
+    background: #b24265;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.service-toggle {
+    width: 100%;
+    padding: 1.5rem;
+    background: none;
+    border: none;
+    text-align: left;
+    font-family: "Italiana", sans-serif;
+    font-size: 1.8rem;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-toggle:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #d2d2d2;
+}
+
+.service-toggle .toggle-icon {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.service-toggle[aria-expanded="true"] .toggle-icon {
+    transform: rotate(45deg);
+}
+
+.service-details {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.3s ease;
+}
+
+.service-details .service-item {
+    padding: 1rem 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    transition: background 0.3s ease;
+}
+
+.service-details .service-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.service-details .service-item h3 {
+    font-family: "Italiana", sans-serif;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.service-details .service-item p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #e0e0e0;
+}
+
+.service-details .service-item .price {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+
+@media (max-width: 768px) {
+    .services-list-section h2 {
+        font-size: 2rem;
+    }
+
+    .service-toggle {
+        font-size: 1.5rem;
+    }
+
+    .service-details .service-item h3 {
+        font-size: 1.3rem;
+    }
+
+    .service-details .service-item p {
+        font-size: 0.9rem;
+    }
+
+    .service-details .service-item .price {
+        font-size: 1rem;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .footer-contact {
+        text-align: center;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .service-category, .service-details {
+        transition: none;
+        opacity: 1;
+        transform: none;
+    }
+
+    .service-toggle .toggle-icon {
+        transition: none;
+    }
+}
+
+.main {
+    flex: 1;
+    padding: 2rem 0;
+}
+
+
+.specialists-section {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 2rem;
+    color: white;
+}
+
+.specialists-section h2 {
+    font-family: "Italiana", sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.specialists-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.specialist-card {
+    background-color: #b24265;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.specialist-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+.specialist-image {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.specialist-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.specialist-card:hover .specialist-image img {
+    transform: scale(1.1);
+}
+
+
+
+.specialist-info {
+    padding: 1.5rem;
+}
+
+.specialist-info h3 {
+    font-family: "Italiana", sans-serif;
+    font-size: 1.8rem;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.specialist-info .role {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-bottom: 1rem;
+}
+
+.specialist-info .bio {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--text-lighter);
+    line-height: 1.6;
+}
+
+.specialist-card:hover .bio {
+    color: white;
+}
+
+.testimonials-section {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 2rem;
+    color: white;
+}
+
+.testimonials-section h2 {
+    font-family: "Italiana", sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.testimonials-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.testimonial-card {
+    background: var(--card-bg);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(217, 58, 108, 0.3);
+}
+
+.testimonial-card .quote {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.testimonial-card .author {
+    font-family: "Italiana", sans-serif;
+    font-size: 1.2rem;
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+    .specialists-section h2, .testimonials-section h2 {
+        font-size: 2rem;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .specialists-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        
+    }
+
+    .specialist-card {
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .specialist-image {
+        height: 200px;
+    }
+
+    .specialist-info h3 {
+        font-size: 1.5rem;
+    }
+
+    .specialist-info .role {
+        font-size: 1rem;
+    }
+
+    .specialist-info .bio {
+        font-size: 0.9rem;
+    }
+
+    .testimonials-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .testimonial-card {
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .testimonial-card .quote {
+        font-size: 1rem;
+    }
+
+    .testimonial-card .author {
+        font-size: 1.1rem;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-left, .nav-right {
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: center;
+        text-align: center;
+    }
+
+    a.logo {
+        margin: 1rem 0;
+        font-size: 40px;
+    }
+
+    .btn {
+        width: 250px;
+        padding: 0.5rem 1rem;
+    }
+
+    
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .specialist-card, .testimonial-card {
+        transition: none;
+        opacity: 1;
+        transform: none;
+    }
+
+    .specialist-image img, .specialist-image .overlay {
+        transition: none;
+    }
+
+    .btn {
+        transition: none;
+    }
+}
+
+/* Стили для секции отзывов */
+.testimonials-section {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 2rem;
+    color: #ffffff;
+}
+
+.testimonials-section h2 {
+    font-family: "Italiana", sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.testimonials-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.testimonial-card {
+    background: #b24265;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.testimonial-card .quote {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: #e0e0e0;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.testimonial-card .author {
+    font-family: "Italiana", sans-serif;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+/* Стили для страницы записи */
+.booking-section {
+    max-width: 800px;
+    margin: 4rem auto;
+    padding: 2rem;
+    color: #ffffff;
+    position: relative;
+    z-index: 1;
+}
+
+.booking-section h2 {
+    font-family: "Italiana", sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #ffffff;
+}
+
+.booking-section h3 {
+    font-family: "Italiana", sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #ffffff;
+}
+
+.booking-form {
+    background: #b24265;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 2rem;
+    position: relative;
+    z-index: 2;
+    opacity: 1;
+    transform: none;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 3;
+}
+
+.form-group label {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: #ffffff;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    background: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    color: #333;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #d93a6c;
+    box-shadow: 0 0 5px rgba(217, 58, 108, 0.5);
+}
+
+.appointments-section {
+    margin-top: 4rem;
+    position: relative;
+    z-index: 2;
+}
+
+.appointments-list {
+    list-style: none;
+    padding: 0;
+}
+
+.appointment-item {
+    background: #b24265;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    color: #ffffff;
+    position: relative;
+    z-index: 2;
+}
+
+.no-appointments {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    color: #e0e0e0;
+    text-align: center;
+    display: none;
+}
+
+.delete-btn {
+    background: #d93a6c;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    position: relative;
+    z-index: 3;
+}
+
+.delete-btn:hover {
+    background: #b24265;
+}
+
+/* Добавляем стили для кнопки записи в навигации */
+.booking-btn {
+    background: #d93a6c;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 500;
+    border: 2px solid #d93a6c;
+    transition: all 0.3s ease;
+}
+
+.booking-btn:hover {
+    background: transparent;
+    color: #d93a6c;
+}
+
+.booking-btn::after {
+    display: none;
+}
+
+.booking-btn.active {
+    background: transparent;
+    color: #d93a6c;
+}
+
+@media (max-width: 768px) {
+    .booking-section {
+        padding: 1rem;
+    }
+
+    .booking-section h2 {
+        font-size: 2rem;
+    }
+
+    .booking-section h3 {
+        font-size: 1.5rem;
+    }
+
+    .booking-form {
+        padding: 1.5rem;
+    }
+
+    .form-group label {
+        font-size: 1rem;
+    }
+
+    .form-group input,
+    .form-group select {
+        font-size: 0.9rem;
+    }
+
+    .appointment-item {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .booking-btn {
+        width: 200px;
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+}
+
+
+
+
+@media (prefers-reduced-motion: reduce) {
+    .specialist-card,
+    .testimonial-card,
+    .background-number,
+    .booking-form,
+    .appointment-item {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .specialists-section h2,
+    .testimonials-section h2,
+    .booking-section h2 {
+        font-size: 2rem;
+    }
+
+    .booking-section h3 {
+        font-size: 1.5rem;
+    }
+
+    .specialist-card {
+        margin: 0 1rem;
+    }
+
+    .specialist-image {
+        height: 200px;
+    }
+
+    .specialist-info h3 {
+        font-size: 1.5rem;
+    }
+
+    .specialist-info .role {
+        font-size: 1rem;
+    }
+
+    .specialist-info .bio {
+        font-size: 0.9rem;
+    }
+
+    .testimonials-container {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial-card .quote {
+        font-size: 1rem;
+    }
+
+    .testimonial-card .author {
+        font-size: 1.1rem;
+    }
+
+    .booking-form {
+        padding: 1.5rem;
+    }
+
+    .form-group label {
+        font-size: 1rem;
+    }
+
+    .form-group input,
+    .form-group select {
+        font-size: 0.9rem;
+    }
+
+    .appointment-item {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+}
+
+
+
+
+/* Стили для страницы контактов */
+.contacts-section {
+    max-width: 800px;
+    margin: 4rem auto;
+    padding: 2rem;
+    color: #ffffff;
+}
+
+.contacts-section h1 {
+    font-family: "Italiana", sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contacts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.contact-info {
+    width: 100%;
+    background: #b24265;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 3rem;
+    transition: transform 0.3s ease;
+}
+
+.contact-info h2 {
+    font-family: "Italiana", sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.contact-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.contact-item {
+    text-align: center;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: translateY(-5px);
+}
+
+.contact-item h3 {
+    font-family: "Italiana", sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.contact-item p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    color: #e0e0e0;
+}
+
+.contact-item a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: #d93a6c;
+}
+
+.contact-map {
+    width: 100%;
+    height: 650px;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.contact-map iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.directions-section {
+    max-width: 800px;
+    margin: 4rem auto;
+    padding: 2rem;
+    color: #ffffff;
+}
+
+.directions-section h2 {
+    font-family: "Italiana", sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.directions-content {
+    background: #b24265;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.direction-item {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.direction-item:hover {
+    transform: translateY(-5px);
+}
+
+.direction-item h3 {
+    font-family: "Italiana", sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.direction-item p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    color: #e0e0e0;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cta-section {
+    text-align: center;
+    margin: 4rem 0;
+}
+
+.cta-section .btn {
+    font-size: 1.2rem;
+    padding: 1rem 3rem;
+}
+
+@media (max-width: 768px) {
+    .contacts-section,
+    .directions-section {
+        padding: 1rem;
+    }
+
+    .contacts-section h1,
+    .directions-section h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .contact-info,
+    .directions-content {
+        padding: 1.5rem;
+    }
+
+    .contact-info h2 {
+        font-size: 1.8rem;
+    }
+
+    .contact-item {
+        padding: 1rem;
+    }
+
+    .contact-item h3 {
+        font-size: 1.5rem;
+    }
+
+    .contact-item p {
+        font-size: 1rem;
+    }
+
+    .direction-item {
+        padding: 1.5rem;
+    }
+
+    .direction-item h3 {
+        font-size: 1.5rem;
+    }
+
+    .direction-item p {
+        font-size: 1rem;
+    }
+
+    .contact-map {
+        height: 300px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .specialist-card, .testimonial-card, .contact-info, .contact-map, .directions-content {
+        transition: none;
+        opacity: 1;
+        transform: none;
+    }
+
+    .specialist-image img, .specialist-image .overlay {
+        transition: none;
+    }
+
+    .btn {
+        transition: none;
+    }
+}
+
+
+
+/* ... existing code ... */
+
+/* Стили для фильтров категорий */
+.category-filters {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.category-btn {
+    background: transparent;
+    border: 2px solid #b24265;
+    color: #ffffff;
+    padding: 0.8rem 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 30px;
+}
+
+.category-btn:hover {
+    background: #b24265;
+    transform: translateY(-2px);
+}
+
+.category-btn.active {
+    background: #b24265;
+    border-color: #ffffff;
+}
+
+/* ... existing code ... */
+
+
+/* ... existing code ... */
+
+/* Стили для страницы новостей и галереи */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+    background-color: #333;
+}
+
+/* Общие стили для секций */
+.news-section,
+.gallery-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.news-section h1,
+.gallery-section h2 {
+    font-family: "Italiana", sans-serif;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #ffffff;
+}
+
+/* Стили для новостей */
+.news-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 100%;
+}
+
+.news-card {
+    background: #b24265;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.news-image {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.news-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.category-tag {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(217, 58, 108, 0.9);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    z-index: 1;
+}
+
+.news-content {
+    padding: 2rem;
+    background: #b24265;
+}
+
+.news-date {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    color: #e0e0e0;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.news-content h2 {
+    font-family: "Italiana", sans-serif;
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    color: #ffffff;
+}
+
+.news-content p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.1rem;
+    color: #e0e0e0;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.read-more {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.1rem;
+    padding: 0.5rem 0;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.read-more::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.read-more:hover {
+    transform: translateX(10px);
+}
+
+.read-more:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* Стили для галереи */
+.gallery-section {
+    margin-top: 4rem;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    width: 100%;
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    aspect-ratio: 1;
+    cursor: pointer;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(178, 66, 101, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.gallery-overlay p {
+    color: #ffffff;
+    font-family: "Italiana", sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem;
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-overlay p {
+    transform: translateY(0);
+}
+
+/* Анимации */
+@keyframes floatIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 768px) {
+    .main {
+        padding: 1rem;
+    }
+
+    .news-section,
+    .gallery-section {
+        padding: 1rem;
+    }
+
+    .news-section h1,
+    .gallery-section h2 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .category-filters {
+        gap: 0.5rem;
+    }
+
+    .category-btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .news-card {
+        margin-bottom: 2rem;
+    }
+
+    .news-image {
+        height: 250px;
+    }
+
+    .news-content {
+        padding: 1.5rem;
+    }
+
+    .news-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .news-content p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .category-tag {
+        top: 10px;
+        right: 10px;
+        padding: 0.3rem 0.8rem;
+        font-size: 0.8rem;
+    }
+
+    .gallery-container {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 1rem;
+    }
+
+    .gallery-overlay p {
+        font-size: 1.2rem;
+    }
+}
+
+/* ... existing code ... */

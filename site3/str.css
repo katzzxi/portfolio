@@ -1,0 +1,485 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0 ;
+    padding: 0;
+    text-decoration: none;
+}
+
+header {
+    height: 200vh;
+}
+
+.container {
+    /* hide fixed overflow contents */
+    clip: rect(0, auto, auto, 0);
+
+    /* does not work if overflow = visible */
+    overflow: hidden;
+
+    /* only works with absolute positioning */
+    position: absolute;
+
+    /* Make sure containers are full-width and height */
+    height: 100vh;
+    left: 0;
+    width: 100%;
+
+
+    /* safari hack */
+    -webkit-mask-image: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 100%);
+}
+
+.container_solid {
+    background: rgb(255, 255, 255);
+
+    /* position this container at the top of its parent element */
+    top: 0;
+}
+
+.title_wrapper {
+    position: fixed;
+    display: block;
+    margin: auto;
+    width: 100%;
+    /* center the text wrapper vertically */
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.title_wrapper h1 {
+    text-align: center;
+    font-size: 200px;
+    text-transform: uppercase;
+    text-align: center;
+
+    font-weight: 700;
+
+    font-family: "Roboto Flex", sans-serif;
+}
+
+.container_solid .title_wrapper h1 {
+    /* the text background */
+    background: url(/site3/img/altay.png);
+    background-size: 100vw auto;
+    background-position: center;
+
+    /* clip the text is possible */
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    /* fallback text color */
+    color: black;
+}
+
+.container_image {
+    /* Grab a free image from unsplash */
+    background-image: url(/site3/img/altay.png);
+    
+  
+ 
+  
+
+    background-size: cover; /* Масштабирует изображение, сохраняя пропорции */
+      background-position: center; /* Центрирует изображение */
+      background-repeat: no-repeat; /* Запрещает повторение */
+      background-attachment: fixed; /* Фиксированный фон */
+      top: 100vh;
+    
+    /* position the second container below the first container */
+    top: 100vh;
+}
+.container_image .title_wrapper h1 {
+    color: white;
+}
+
+.bounce {
+    padding-top: 50px;
+    align-items: center;
+    display: flex;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.bounce {
+    animation: bounce 2s infinite;
+    margin: 0 auto;
+}
+
+.oglav{
+    width: 2500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px auto;
+}
+
+.title__day {
+    align-items: center;
+    font-family: "Roboto Flex", sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+    margin: 20px 0;
+    text-align: center;
+    color: #fff;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    background: rgba(20, 54, 30, 100);
+
+}
+
+
+
+.title {
+    font-family: "Roboto Flex", sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 100%;
+    text-align: center;
+    color: #000;
+    
+}
+
+
+.point {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px;
+    min-height: 800px;
+    overflow: hidden;
+   
+}
+
+.point-l {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px;
+    min-height: 800px;
+    overflow: hidden;
+   
+}
+
+.point__text {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    font-family: 'Jost';
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 111%;
+    color: #000;
+    border: 1px solid rgba(225, 224, 224, 0.33);
+    width: 774px;
+    height: 386px;
+    backdrop-filter: blur(24px);
+    background: rgba(225, 224, 224, 0.74);
+    left: 700px;
+    padding: 50px;
+
+}
+
+.point__img {
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+    height: 100%;
+    width: 50%;
+    
+}
+
+.btn__order{
+    border: 5px solid #072f3c;
+width: 377px;
+height: 107px;
+font-family: "Roboto Flex", sans-serif;
+font-weight: 700;
+font-size: 35px;
+line-height: 229%;
+text-align: center;
+color: #072f3c;
+display: flex;
+justify-content: center;
+margin: 50px auto;
+align-items: center;
+transition: 1s;
+}
+
+.btn__order:hover{
+    background-color: #202720;
+    color: white;
+    transition: 1s;
+}
+
+
+footer{
+    padding: 100px;
+    height: 359px;
+    background: #202720;
+    
+    
+    
+    }
+    .footer__text{
+      align-items: center;
+    
+    }
+    
+    .icons{
+      justify-content: center;
+      display: flex;
+      gap: 5px;
+      padding-top: 20px;
+    }
+    
+    .footer__title{
+      font-family:  "Roboto Flex", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 80%;
+    text-align: center;
+    color: #fff;
+    padding-top: 20px;
+    }
+    .footer__title2{
+      font-family:  "Roboto Flex", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 100%;
+    text-align: center;
+    color: #fff;
+    
+    }
+    
+    
+    .footer__title__back{
+    
+      font-family:  "Roboto Flex", sans-serif;
+    font-weight: 700;
+    font-size: 90px;
+ 
+    color: rgba(225, 225, 225, 0.27);
+
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+
+    }
+    
+    
+    
+
+
+    
+
+
+
+    /* Базовые стили для всей страницы */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    background-color: #f8f8f8; /* Светлый фон для всей страницы */
+}
+
+/* Стили для секции, которая содержит все блоки дней */
+.days-section {
+    padding: 5rem 2rem; /* Отступы сверху/снизу 5rem, слева/справа 2rem */
+    background-color: #fff; /* Белый фон для секции */
+}
+
+/* Стили для блока дня (общие для обоих направлений) */
+.day-block-left,
+.day-block-right {
+    position: relative; /* Для позиционирования текста поверх изображения */
+    margin-bottom: 5rem; /* Отступ снизу между блоками */
+    height: 35rem; /* Фиксированная высота блока */
+   
+    transform: translateY(30px); /* Начальное смещение вниз для анимации */
+    transition: opacity 0.8s ease, transform 0.8s ease; /* Плавная анимация */
+}
+
+
+
+/* Стили для контейнера изображения */
+.day-image {
+    position: absolute; /* Абсолютное позиционирование для фона */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease; /* Плавное увеличение при наведении */
+}
+
+/* Стили для самого изображения */
+.day-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Изображение заполняет контейнер без искажений */
+    border-radius: 1rem; /* Скругленные углы */
+    transition: opacity 0.5s ease; /* Плавное затемнение при наведении */
+}
+
+/* Эффект затемнения изображения при наведении */
+.day-image:hover img {
+    opacity: 0.8;
+}
+
+/* Эффект увеличения изображения при наведении */
+.day-image:hover {
+    transform: scale(1.02);
+}
+
+/* Стили для текстовой части */
+.day-content {
+    position: absolute; /* Позиционируем текст поверх изображения */
+    top: 50%;
+    transform: translateY(-50%); /* Центрируем по вертикали */
+    width: 55%; /* Ширина текста (для нахлеста на изображение) */
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.85)); /* Полупрозрачный градиентный фон */
+    padding: 2.5rem;
+    border-radius: 1rem; /* Скругленные углы */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Тень для глубины */
+    z-index: 2; /* Текст поверх изображения */
+    transition: transform 0.3s ease; /* Плавный подъем при наведении */
+}
+
+/* Эффект подъема текста при наведении */
+.day-content:hover {
+    transform: translateY(-55%);
+}
+
+/* Позиционирование текста слева для блока "День 1" */
+.day-block-left .day-content {
+    left: 0;
+}
+
+/* Позиционирование текста справа для блока "День 2" */
+.day-block-right .day-content {
+    right: 0;
+}
+
+/* Стили для метки "День 1/2" */
+.day-label {
+    display: inline-block;
+    background-color: #14361E; /* Темно-зеленый фон */
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase; /* Все буквы заглавные */
+    letter-spacing: 1px; /* Увеличенный межбуквенный интервал */
+}
+
+/* Стили для заголовка (название места) */
+.day-title {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #1a1a1a; /* Темный цвет текста */
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Легкая тень для глубины */
+}
+
+/* Стили для описания */
+.day-description {
+    background-color: #E5E5E5; /* Светло-серый фон */
+    padding: 1.5rem;
+    font-size: 1.125rem;
+    color: #333;
+    line-height: 1.7; /* Увеличенный межстрочный интервал */
+    border-radius: 0.5rem;
+}
+
+/* Адаптивность */
+
+/* Для экранов до 1024px */
+@media (max-width: 1024px) {
+    .day-block-left,
+    .day-block-right {
+        height: 28rem; /* Уменьшаем высоту блока */
+        margin-bottom: 4rem;
+    }
+    .day-content {
+        width: 60%; /* Увеличиваем ширину текста */
+        padding: 2rem;
+    }
+    .day-label { font-size: 1.25rem; padding: 0.4rem 1.2rem; }
+    .day-title { font-size: 3.2rem; }
+    .day-description { font-size: 1rem; padding: 1rem; }
+}
+
+/* Для экранов до 768px */
+@media (max-width: 768px) {
+    .day-block-left,
+    .day-block-right {
+        height: auto; /* Убираем фиксированную высоту */
+        margin-bottom: 3rem;
+    }
+    .day-image {
+        position: relative; /* Изображение становится статичным */
+        width: 100%;
+        height: 22rem;
+    }
+    .day-content {
+        position: relative;
+        top: 0;
+        transform: none; /* Отключаем центрирование */
+        width: 100%;
+        padding: 1.5rem;
+        margin-top: -4rem; /* Нахлест текста на изображение */
+    }
+    .day-content:hover {
+        transform: none; /* Отключаем эффект подъема */
+    }
+    .day-label { font-size: 1.125rem; }
+    .day-title { font-size: 2.5rem; }
+    .day-description { font-size: 0.875rem; }
+}
+
+/* Для экранов до 425px (мобильные устройства) */
+@media (max-width: 425px) {
+    .days-section { padding: 3rem 1rem; }
+    .day-block-left,
+    .day-block-right { margin-bottom: 2rem; }
+    .day-image { height: 15rem; }
+    .day-content {
+        padding: 1rem;
+        margin-top: -3rem; /* Меньший нахлест */
+    }
+    .day-label { font-size: 1rem; padding: 0.3rem 1rem; }
+    .day-title { font-size: 1.75rem; }
+    .day-description { font-size: 0.75rem; padding: 0.75rem; }
+}

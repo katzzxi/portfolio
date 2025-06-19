@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги - LUMI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+</head>
+<body>
+    <!-- Шапка с навигацией -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-left">
+                <a href="index.html">Главная</a>
+                <a href="services.html" class="active">Услуги</a>
+                <a href="specialists.html" >Специалисты</a>
+            </div>
+            <a href="1.html" class="logo">LUMI</a>
+            <div class="nav-right">
+                <a href="news-gallery.html">Новости</a>
+                <a href="contacts.html">Контакты</a>
+                <a href="booking.html" class="booking-btn">Запись</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="main">
+        <section class="services-list-section">
+            <h2>Наши услуги</h2>
+            <div class="services-container">
+                <!-- Ногтевой сервис -->
+                <div class="service-category">
+                    <button class="service-toggle" aria-expanded="false" aria-controls="nail-service-details">
+                        Ногтевой сервис
+                        <span class="toggle-icon">+</span>
+                    </button>
+                    <div class="service-details" id="nail-service-details">
+                        <div class="service-item">
+                            <h3>Классический маникюр</h3>
+                            <p>Тщательный уход за ногтями и кутикулой, придание формы ногтям.</p>
+                            <span class="price">1500 ₽</span>
+                        </div>
+                        <div class="service-item">
+                            <h3>Комбинированный маникюр</h3>
+                            <p>Сочетание классического и аппаратного маникюра для идеального результата.</p>
+                            <span class="price">1800 ₽</span>
+                        </div>
+                        <div class="service-item">
+                            <h3>Педикюр</h3>
+                            <p>Полный уход за стопами и ногтями, включая обработку кутикулы.</p>
+                            <span class="price">2500 ₽</span>
+                        </div>
+                        <div class="service-item">
+                            <h3>Покрытие гель-лак</h3>
+                            <p>Долговременное покрытие с использованием качественных материалов.</p>
+                            <span class="price">1200 ₽</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Визаж -->
+                <div class="service-category">
+                    <button class="service-toggle" aria-expanded="false" aria-controls="makeup-service-details">
+                        Визаж
+                        <span class="toggle-icon">+</span>
+                    </button>
+                    <div class="service-details" id="makeup-service-details">
+                        <div class="service-item">
+                            <h3>Дневной макияж</h3>
+                            <p>Легкий макияж, подчеркивающий естественную красоту.</p>
+                            <span class="price">2000 ₽</span>
+                        </div>
+                        <div class="service-item">
+                            <h3>Вечерний макияж</h3>
+                            <p>Яркий образ для особых случаев с акцентом на глаза или губы.</p>
+                            <span class="price">3000 ₽</span>
+                        </div>
+                        <div class="service-item">
+                            <h3>Свадебный макияж</h3>
+                            <p>Стойкий макияж, созданный с учетом вашего образа и пожеланий.</p>
+                            <span class="price">4500 ₽</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Парикмахерский зал -->
+                <div class="service-category">
+                    <button class="service-toggle" aria-expanded="false" aria-controls="hair-service-details">
+                        Парикмахерский зал
+                        <span class="toggle-icon">+</span>
+                    </button>
+                    <div class="service-details" id="hair-service-details">
+                        <div class="service-item">
+                            <h3>Женская стрижка</h3>
+                            <p>Индивидуальная стрижка с учетом формы лица и структуры волос.</p>
+                            <span class="price">2000 ₽</span>
+                        </div>
+                        <div class="service-item">
+                            <h3>Окрашивание волос</h3>
+                            <p>Однотонное окрашивание или сложные техники (цена зависит от длины).</p>
+                            <span class="price">от 3500 ₽</span>
+                        </div>
+                        <div class="service-item">
+                            <h3>Уход за волосами</h3>
+                            <p>Восстанавливающие процедуры для здоровья и блеска волос.</p>
+                            <span class="price">2500 ₽</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Коррекция бровей -->
+                <div class="service-category">
+                    <button class="service-toggle" aria-expanded="false" aria-controls="brow-service-details">
+                        Коррекция бровей
+                        <span class="toggle-icon">+</span>
+                    </button>
+                    <div class="service-details" id="brow-service-details">
+                        <div class="service-item">
+                            <h3>Коррекция бровей</h3>
+                            <p>Придание формы бровям с учетом особенностей лица.</p>
+                            <span class="price">800 ₽</span>
+                        </div>
+                        <div class="service-item">
+                            <h3>Окрашивание бровей</h3>
+                            <p>Окрашивание хной или краской для выразительного взгляда.</p>
+                            <span class="price">700 ₽</span>
+                        </div>
+                        <div class="service-item">
+                            <h3>Ламинирование бровей</h3>
+                            <p>Долговременная укладка для идеальной формы и объема.</p>
+                            <span class="price">2000 ₽</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="booking.html" class="btn">ЗАПИСАТЬСЯ</a>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer>
+         <div class="footer-links">
+            <a href="1.html" class="logo">LUMI</a>
+            <a href="1.html">Главная</a>
+            <a href="services.html">Услуги</a>
+            <a href="specialists.html">Специалисты</a>
+            <a href="news-gallery.html">Новости</a>
+            <a href="contacts.html">Контакты</a>
+        </div>
+        <div class="footer-contact">
+            <p>Москва, Гнездниковский пер., 10</p>
+            <p>89098678978</p>
+            <p>Пн–Вс 10:00–22:00</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

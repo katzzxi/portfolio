@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости и Галерея - LUMI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <!-- Шапка с навигацией -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-left">
+                <a href="index.html">Главная</a>
+                <a href="services.html" >Услуги</a>
+                <a href="specialists.html" >Специалисты</a>
+            </div>
+            <a href="1.html" class="logo">LUMI</a>
+            <div class="nav-right">
+                <a href="news-gallery.html" class="active">Новости</a>
+                <a href="contacts.html">Контакты</a>
+                <a href="booking.html" class="booking-btn">Запись</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="main">
+        <!-- Секция новостей -->
+        <section class="news-section">
+            <h1>Блог LUMI</h1>
+            
+            <!-- Фильтры категорий -->
+            <div class="category-filters">
+                <button class="category-btn active" data-category="all">Все публикации</button>
+                <button class="category-btn" data-category="news">Новости</button>
+               
+                <button class="category-btn" data-category="promotions">Акции</button>
+            </div>
+
+            <div class="news-container">
+                <article class="news-card" data-category="news">
+                    <div class="news-image">
+                        <img src="n1.jpg" alt="Новые процедуры">
+                        <span class="category-tag">Новости</span>
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date">15 марта 2024</span>
+                        <h2>Новые процедуры для ухода за волосами</h2>
+                        <p>Мы рады представить инновационные процедуры для восстановления и ухода за волосами. Теперь в нашем салоне доступны премиальные уходовые процедуры от ведущих брендов. Наши специалисты прошли специальное обучение и готовы предложить вам лучшие решения для красоты ваших волос.</p>
+                        <a href="booking.html" class="read-more">Записаться</a>
+                    </div>
+                </article>
+
+                <article class="news-card" data-category="promotions">
+                    <div class="news-image">
+                        <img src="n2.jpg" alt="Специальное предложение">
+                        <span class="category-tag">Акции</span>
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date">10 марта 2024</span>
+                        <h2>Специальное весеннее предложение</h2>
+                        <p>Встречайте весну с новым образом! Весь март действует специальное предложение на комплекс услуг по уходу за лицом. Получите скидку 20% на все процедуры для лица при записи на комплекс из трех сеансов. Акция действует до конца месяца.</p>
+                        <a href="booking.html" class="read-more">Записаться</a>
+                    </div>
+                </article>
+
+                
+
+                <article class="news-card" data-category="news">
+                    <div class="news-image">
+                        <img src="/n4.png" alt="Новый специалист">
+                        <span class="category-tag">Новости</span>
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date">1 марта 2024</span>
+                        <h2>В нашей команде новый специалист</h2>
+                        <p>Рады представить нового мастера-колориста в нашей команде! Анна - специалист с 10-летним опытом работы, призер международных конкурсов по колористике. Записывайтесь на консультацию и создавайте неповторимые образы вместе с профессионалом.</p>
+                        <a href="booking.html" class="read-more">Записаться</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Секция галереи -->
+        <section class="gallery-section">
+            <h2>Наши работы</h2>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="g1.jpg" alt="Работа 1">
+                    <div class="gallery-overlay">
+                        <p>Окрашивание волос</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="g2.jpg" alt="Работа 2">
+                    <div class="gallery-overlay">
+                        <p>Макияж</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="g3.jpg" alt="Работа 3">
+                    <div class="gallery-overlay">
+                        <p>Маникюр</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="g4.jpg" alt="Работа 4">
+                    <div class="gallery-overlay">
+                        <p>Укладка</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="g5.jpg" alt="Работа 5">
+                    <div class="gallery-overlay">
+                        <p>Уход за лицом</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="g6.jpg" alt="Работа 6">
+                    <div class="gallery-overlay">
+                        <p>Стрижка</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer>
+        <div class="footer-links">
+            <a href="1.html" class="logo">LUMI</a>
+            <a href="1.html">Главная</a>
+            <a href="services.html">Услуги</a>
+            <a href="specialists.html">Специалисты</a>
+            <a href="news-gallery.html">Новости</a>
+            <a href="contacts.html">Контакты</a>
+        </div>
+        <div class="footer-contact">
+            <p>Москва, Гнездниковский пер., 10</p>
+            <p>89098678978</p>
+            <p>Пн–Вс 10:00–22:00</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html> 

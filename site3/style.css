@@ -1,0 +1,734 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0 ;
+  padding: 0;
+  text-decoration: none;
+}
+body {
+  font-family: "Roboto Flex", sans-serif;
+}
+
+header {
+  height: 200vh;
+}
+
+  body {
+    min-height: 100vh; /* Страница всегда имеет необходимый размер */
+    position: relative; /* Определяет позиционирование элементов внутри */
+  }
+
+
+.container {
+  /* hide fixed overflow contents */
+  clip: rect(0, auto, auto, 0);
+
+  /* does not work if overflow = visible */
+  overflow: hidden;
+
+  /* only works with absolute positioning */
+  position: absolute;
+
+  /* Make sure containers are full-width and height */
+  height: 100vh;
+  left: 0;
+  width: 100%;
+  
+  
+  /* safari hack */
+
+}
+
+
+
+
+.container_solid {
+  background: rgb(255, 255, 255);
+  
+  /* position this container at the top of its parent element */
+  top: 0;
+}
+
+.title_wrapper {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+  /* center the text wrapper vertically */
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.title_wrapper h1 {
+  text-align: center;
+  font-size: 200px;
+  text-transform: uppercase;
+  text-align: center;
+  
+  font-weight: 700;
+
+  font-family: "Roboto Flex", sans-serif;
+}
+
+.container_solid .title_wrapper h1 {
+  /* the text background */
+  background: url(/site3/img/russia.png);
+  background-size: 100vw auto;
+  background-position: center;
+  
+  /* clip the text is possible */
+  
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  
+  /* fallback text color */
+  color: black;
+}
+
+.container_image {
+  /* Grab a free image from unsplash */
+  background-image: url(/site3/img/russia.png);
+  
+ 
+  
+
+  background-size: cover; /* Масштабирует изображение, сохраняя пропорции */
+    background-position: center; /* Центрирует изображение */
+    background-repeat: no-repeat; /* Запрещает повторение */
+    background-attachment: fixed; /* Фиксированный фон */
+    top: 100vh;
+  
+  /* position the second container below the first container */
+  top: 100vh;
+}
+
+.container_image .title_wrapper h1 {
+  color: white;
+}
+
+
+
+.subtitle__head{
+    font-family: 'Jost';
+font-weight: 500;
+font-size: 80px;
+line-height: 100%;
+color: #fff;
+
+position: relative;
+
+}
+
+
+.bounce{
+    padding-top: 50px;
+    align-items: center;
+    display: flex;
+}
+@keyframes bounce {
+    
+    0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+    }
+    40% {
+    transform: translateY(-30px);
+    }
+    60% {
+    transform: translateY(-15px);
+    }
+    }
+    .bounce {
+    animation: bounce 2s infinite;
+    margin: 0 auto;
+    }
+
+
+
+.second__block{
+  
+  background: url(/site3/img/back.png); 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-position: center; 
+  height: 100vh; 
+  
+}
+
+.text__second{
+  position: relative;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+
+.title__second{
+    font-family: "Roboto Flex", sans-serif;
+font-weight: 700;
+font-size: 80px;
+line-height: 100%;
+text-align: center;
+color: black;
+max-width: 907px;
+margin-bottom: 47px;
+}
+
+.title__second span{
+  padding: 0 10px;
+  background: rgba(20, 54, 30, 100);
+  color: white;
+}
+
+.subtitle__second{
+    font-family: "Roboto Flex", sans-serif;
+font-weight: 700;
+font-size: 35px;
+text-align: center;
+color: #000;
+max-width: 872px;
+}
+
+
+.container1{
+   position: relative;
+  
+  
+}
+
+.title__card{
+  font-family: "Roboto Flex", sans-serif;
+font-weight: 700;
+font-size: 50px;
+line-height: 160%;
+text-align: center;
+color: #fff;
+
+padding: 0 10px;
+  background: rgba(20, 54, 30, 100);
+}
+
+
+.third__block{
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  height: 500px;
+  background-color: #f4f4f4;
+  overflow: hidden;
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+}
+
+.carousel {
+  width: 1140px; /* 3 карточки по 370px + отступы */
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  align-items: center;
+}
+
+
+
+.card {
+  width: 370px;
+  height: 420px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin: 0 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease-in-out;
+  flex-shrink: 0; /* Чтобы карточки не сжимались */
+  transition: 0.5s;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.card:hover{
+  width: 390px;
+  height: 450px;
+  transition: 0.5s;
+}
+
+/* Поднимаем центральную карточку */
+.card.active {
+  transform: translateY(-20px);
+}
+
+/* Кнопки */
+.prev-btn, .next-btn {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.prev-btn { left: -50px; 
+  @media (min-width: 1024px) {
+    left: -5;
+  }
+}
+
+.next-btn { right: -50px; 
+  @media (min-width: 1024px) {
+    right: -5;
+  }
+}
+
+
+
+
+
+.back__title{
+  font-family: "Roboto Flex", sans-serif;
+font-weight: 700;
+font-size: 170px;
+color: #e1e1e1;
+text-align: right;
+}
+
+#savedForms ul {
+  list-style: none;
+  padding: 0;
+}
+#savedForms li {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+
+.form__block{
+  background-image: url(/site3/img/back\ form.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.form__title{
+  font-family: "Roboto Flex", sans-serif;
+font-weight: 700;
+font-size: 40px;
+line-height: 178%;
+color: #fff;
+
+}
+
+
+.form {
+  margin: 0 auto;
+  max-width: 567px;
+height: 60vh;
+  align-self: center;
+  box-shadow: 0 -10px 20px 0 rgba(0, 0, 0, 0.25), 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+background: rgba(34, 34, 34, 0.74);
+padding: 100px 50px;
+align-items: center;
+
+
+}
+
+
+.form__input {
+ 
+  max-width: 460px;
+height: 52px;
+  border: 1px solid black;
+  background: rgba(255, 255, 255, 0.89);
+  border-radius: 2px;
+  margin: 0.625rem auto;
+  transition: all 250ms;
+  font-family:  "Roboto Flex", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  color: #616161;
+
+  
+  
+
+  @media (min-width: 768px) {
+    width: clamp(120px, 35vw, 420px);
+  }
+  
+  
+
+
+
+  
+  
+  &::placeholder {
+      display: none;
+      color: gray ;
+      font-size: 20px;
+ 
+      
+  }
+  
+  
+ 
+}
+
+
+
+
+.btn__form{
+  border: 3px solid #fff;
+  max-width:  464px;
+  height: 56px;
+  font-family:  "Roboto Flex", sans-serif;
+font-weight: 700;
+font-size: 30px;
+text-align: center;
+color: #8e8e8e;
+transition: 0.7s;
+
+
+
+@media (min-width: 768px) {
+  width: clamp(120px, 35vw, 420px);
+}
+}
+
+.btn__form:hover{
+  background-color: #ffffff;
+  color: black;
+  transition: 0.7s;
+}
+
+
+footer{
+padding: 100px;
+height: 359px;
+background: #202720;
+
+
+
+}
+.footer__text{
+  align-items: center;
+
+}
+
+.icons{
+  justify-content: center;
+  display: flex;
+  gap: 5px;
+}
+
+.footer__title{
+  font-family:  "Roboto Flex", sans-serif;
+font-weight: 700;
+font-size: 40px;
+line-height: 115%;
+text-align: center;
+color: #fff;
+}
+.footer__title2{
+  font-family:  "Roboto Flex", sans-serif;
+font-weight: 400;
+font-size: 40px;
+line-height: 115%;
+text-align: center;
+color: #fff;
+}
+
+
+.footer__title__back{
+
+  font-family:  "Roboto Flex", sans-serif;
+font-weight: 700;
+font-size: 90px;
+line-height: 1px;
+color: rgba(225, 225, 225, 0.27);
+
+
+padding-top: 90px;
+
+display: flex;
+justify-content: flex-start;
+align-items: end;
+
+}
+
+
+
+.forma{
+  background-image: url(/site3/img/back\ form\ \(2\).png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  filter: brightness(90%);
+  
+}
+
+.form1 {
+  margin: 0 auto;
+  width: 530px;
+height: 70vh;
+  align-self: center;
+  box-shadow: 0 -10px 20px 0 rgba(0, 0, 0, 0.25), 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+background: rgba(34, 34, 34, 0.74);
+padding: 100px 50px;
+align-items: center;
+
+box-shadow: 0 0 120px 0 rgba(255, 255, 255, 0.79), 0 0 209px 0 rgba(255, 255, 255, 0.92);
+background: rgba(34, 34, 34, 0.74);
+
+}
+
+
+.about__btn{
+  border: 5px solid #072f3c;
+width: 377px;
+height: 107px;
+font-family: "Roboto Flex", sans-serif;
+font-weight: 700;
+font-size: 35px;
+line-height: 229%;
+text-align: center;
+color: #072f3c;
+display: flex;
+justify-content: center;
+margin: 50px auto;
+align-items: center;
+transition: 1s;
+text-decoration: none;
+}
+
+.about__btn:hover{
+  background-color: #202720;
+  color: white;
+  transition: 1s;
+}
+
+
+
+/* Общие стили, которые уже есть у вас */
+
+/* Для больших экранов, например, 1440px */
+@media (max-width: 1440px) {
+  /* Пример стилизации для больших экранов */
+  .title_wrapper h1 {
+    font-size: 180px; /* Уменьшаем размер заголовка */
+  }
+
+  .subtitle__head {
+    font-size: 60px;  /* Уменьшаем размер подзаголовка */
+  }
+
+  .third__block {
+    height: 400px; /* Уменьшаем высоту третьего блока */
+  }
+
+  .carousel-container {
+    width: 100%;
+  }
+
+  .carousel {
+    width: 950px; /* Адаптируем ширину карусели */
+  }
+
+  .carousel .card {
+    width: 320px; /* Уменьшаем ширину карточек */
+  }
+
+  .title__second {
+    font-size: 60px;
+  }
+  .subtitle__second {
+    font-size: 30px;
+  }
+
+
+  .form__input {
+    font-size: 20px;
+  }
+
+  .form__title {
+    font-size: 30px;
+  }
+
+  .back__title{
+    font-size: 0px;
+  }
+
+  
+}
+
+/* Для экранов до 1024px */
+@media (max-width: 1024px) {
+  .title_wrapper h1 {
+    font-size: 160px;
+  }
+
+  .subtitle__head {
+    font-size: 55px;
+  }
+
+  .third__block {
+    height: 350px;
+  }
+
+  .carousel {
+    width: 100%; /* Уменьшаем ширину карусели */
+  }
+
+  .carousel .card {
+    width: 280px;
+  }
+
+  .title__second {
+    font-size: 50px;
+  }
+
+  .subtitle__second {
+    font-size: 20px;
+  }
+
+  .form__input {
+    font-size: 18px;
+  }
+
+  .form__title {
+    font-size: 28px;
+  }
+}
+
+/* Для экранов до 768px */
+@media (max-width: 768px) {
+  .title_wrapper h1 {
+    font-size: 140px; /* Уменьшаем размер шрифта на экранах до 768px */
+  }
+
+  .subtitle__head {
+    font-size: 50px;
+  }
+
+  .third__block {
+    height: 300px; /* Уменьшаем размер блока */
+  }
+
+  .carousel-container {
+    width: 90%;
+  }
+
+  .carousel .card {
+    width: 250px; /* Уменьшаем размер карточек */
+  }
+
+  .title__second {
+    font-size: 45px;
+  }
+
+  .subtitle__second {
+    font-size: 20px;
+    max-width: 600px;
+  }
+
+  .form__input {
+    font-size: 16px;
+  }
+
+  .form__title {
+    font-size: 24px;
+  }
+}
+
+/* Для экранов до 425px */
+@media (max-width: 426px) {
+  .title_wrapper h1 {
+    font-size: 80px; /* Уменьшаем размер шрифта для маленьких экранов */
+  }
+
+  .subtitle__head {
+    font-size: 40px;
+  }
+
+  .third__block {
+    height: 250px; /* Уменьшаем блок */
+  }
+
+  .carousel {
+    width: 100%;
+  }
+
+  .carousel .card {
+    width: 220px; /* Карточки уменьшаются для мобильных экранов */
+  }
+
+  .title__second {
+    font-size: 40px;
+  }
+
+  .form__input {
+    font-size: 14px;
+    width: 250px;
+  }
+
+  .form__title {
+    font-size: 20px;
+  }
+
+  .form{
+    padding: 100px 70px;
+  }
+  
+  .btn__form {
+    font-size: 24px;
+    
+    width: 250px;
+  }
+
+   
+ 
+
+  .footer__title {
+    font-size: 30px;
+  }
+
+  .footer__title2 {
+    font-size: 28px;
+  }
+
+  .footer__title__back {
+    font-size: 70px;
+  }
+}
+

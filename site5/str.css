@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Krona+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.first{
+    background-image: url(/site5/Airbrush-image-extender-2\ 1.png);
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+h1{
+    font-family: "Krona One", sans-serif;
+font-weight: 400;
+font-size: 60px;
+color: #fff;
+max-width: 725px;
+position: absolute;
+    bottom: 30%;
+    left: 16px;
+}
+
+header{
+    background-color: black;
+    display: flex;
+    
+}
+
+ul{
+    display: flex;
+    gap: 100px; 
+    justify-content: center;
+    align-items: center;
+}
+
+li{
+    font-family: "Jost", sans-serif;
+font-weight: 400;
+font-size: 40px;
+color: #fff;
+list-style: none;
+transition: 0.3s;
+}
+
+
+
+li:hover{
+ color: gray;   
+ transition: 0.3s;
+}
+
+
+.header__img{
+    justify-content: center;
+    display: flex;
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+
+
+.perfume-container {
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+.perfume-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
+    position: relative;
+}
+.perfume-card:hover {
+    transform: translateY(-5px);
+}
+.perfume-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.perfume-info {
+    padding: 15px;
+}
+.perfume-info h3 {
+    margin: 0;
+    font-size: 1.7em;
+   
+
+    font-family: "Jost", sans-serif;
+font-weight: 400;
+
+line-height: 98%;
+color: #000;
+}
+.perfume-info  {
+    margin: 5px 0;
+    color: #666;
+    font-family: "Jost", sans-serif;
+font-weight: 400;
+color: #a2a2a2;
+}
+.favorite-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #ccc;
+    transition: color 0.2s;
+}
+.favorite-btn.favorited {
+    color: #e91e63;
+    
+}
+.price {
+   
+    font-family: "Jost", sans-serif;
+font-weight: 500;
+font-size: 30px;
+line-height: 116%;
+color: #000000;
+}
+
+a{
+    text-decoration: none;
+}
+
+h2{
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-size: 6rem;
+    color: #000000;
+    
+    display: flex;
+    margin: 20px 0;
+}
+
+
+.second__block{
+    background-image: url(/site5/new_1_Category_Bvlgari_fullhd.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60vh;
+}
+
+
+
+
+.discount{
+    background-image: url(/site5/Group\ 7.png);
+    border-radius: 55px;
+      overflow: hidden;
+      
+      margin: 20px auto;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 400px;
+
+
+      
+    align-items: center;
+    justify-content: right;
+    display: flex;
+   
+      padding: 150px 0 0 35%;
+      text-align: center;
+      flex-direction: column;
+   
+}
+
+.discount h2{
+    font-size: 40px;
+}
+
+.discount__btn{
+    border-radius: 30px;
+width: 233px;
+height: 70px;
+background-color: #000;
+font-family: "Jost", sans-serif;
+font-weight: 400;
+font-size: 40px;
+text-align: center;
+color: #edebec;
+transition: 0.3s;
+}
+
+.discount__btn:hover{
+    border: #000 2px solid;
+    background-color: #edebec ;
+    color: black;
+    transition: 0.3s;
+}
+
+footer{
+    background-color: #000;
+    display: flex;
+}
+
+
+
+
+
+.container1 {
+    width: 1200px; 
+    height: 600px;
+    
+    margin: 40px auto;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    background: white;
+}
+  .text-content {
+    position: relative;
+    z-index: 10;
+    width: 50%;
+    padding: 40px;
+    font-family: "Krona One", sans-serif;
+}
+  .text-content h1 {
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+  .circle-background {
+    position: absolute;
+    top: 0;
+    right: 0; 
+    width: 50%; 
+    height: 100%;
+    pointer-events: none; 
+}
+  .image-container1 {
+    position: absolute;
+    top: 50%;
+    right: -480px; 
+    transform: translateY(-50%);
+    width: 130%; 
+    height: 130%;
+    z-index: 20;
+}
+  .image-container1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+  .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: expand 15s linear infinite; 
+    opacity: 1;
+    z-index: 0;
+}
+  .circle.black {
+    background: black;
+}
+  .circle.white {
+    background: white;
+}
+  @keyframes expand {
+    0% {
+      width: 0;
+      height: 0;
+      opacity: 1;
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      width: 300vmax;
+      height: 300vmax;
+      opacity: 0;
+    }
+}
+
+  .delay-0  { animation-delay: 0s;   }
+  .delay-1  { animation-delay: 1.5s; }
+  .delay-2  { animation-delay: 3s;   }
+  .delay-3  { animation-delay: 4.5s; }
+  .delay-4  { animation-delay: 6s;   }
+  .delay-5  { animation-delay: 7.5s; }
+  .delay-6  { animation-delay: 9s;   }
+  .delay-7  { animation-delay: 10.5s;}
+  .delay-8  { animation-delay: 12s;  }
+  .delay-9  { animation-delay: 13.5s;}
