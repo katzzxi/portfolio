@@ -65,7 +65,7 @@ header {
 
 .container_solid .title_wrapper h1 {
     /* the text background */
-    background: url(/site3/img/altay.png);
+    background: url(site3/img/altay.png);
     background-size: 100vw auto;
     background-position: center;
 
@@ -81,7 +81,7 @@ header {
 
 .container_image {
     /* Grab a free image from unsplash */
-    background-image: url(/site3/img/altay.png);
+    background-image: url(site3/img/altay.png);
     
   
  

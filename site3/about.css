@@ -1,5 +1,5 @@
-@import url(/site3/reset.css);
-@import url(/site3/str.css);
+@import url(site3/reset.css);
+@import url(site3/str.css);
 
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 
@@ -60,7 +60,7 @@ header {
 
 .container_solid .title_wrapper h1 {
 
-    background: url(/site3/img/i.webp);
+    background: url(site3/img/i.webp);
     background-size: 100vw auto;
     background-position: center;
 
@@ -76,7 +76,7 @@ header {
 
 .container_image {
 
-    background-image: url(/site3/img/i.webp);
+    background-image: url(site3/img/i.webp);
     background-size: 100vw auto;
     background-position: center;
     background-attachment: fixed;

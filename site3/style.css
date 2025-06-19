@@ -78,7 +78,7 @@ header {
 
 .container_solid .title_wrapper h1 {
   /* the text background */
-  background: url(/site3/img/russia.png);
+  background: url(site3/img/russia.png);
   background-size: 100vw auto;
   background-position: center;
   
@@ -94,7 +94,7 @@ header {
 
 .container_image {
   /* Grab a free image from unsplash */
-  background-image: url(/site3/img/russia.png);
+  background-image: url(site3/img/russia.png);
   
  
   
@@ -153,7 +153,7 @@ position: relative;
 
 .second__block{
   
-  background: url(/site3/img/back.png); 
+  background: url(site3/img/back.png); 
   background-repeat: no-repeat; 
   background-size: cover; 
   background-position: center; 
@@ -332,7 +332,7 @@ text-align: right;
 
 
 .form__block{
-  background-image: url(/site3/img/back\ form.png);
+  background-image: url(site3/img/back\ form.png);
   background-size: cover;
   background-repeat: no-repeat;
   height: 60vh;
@@ -489,7 +489,7 @@ align-items: end;
 
 
 .forma{
-  background-image: url(/site3/img/back\ form\ \(2\).png);
+  background-image: url(site3/img/back\ form\ \(2\).png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
