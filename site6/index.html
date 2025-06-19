@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design & Architecture</title>
+   <link rel="icon" href="/site6/Black.svg" type="image/x-icon">
+  <link rel="stylesheet" href="/site6/styles.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <div id="sidebar" class="sidebar">
+    <div class="close-btn">×</div>
+    <a href="#home">Главная</a>
+    <a href="/site6/2.html">Проекты</a>
+    <a href="/site6/team.html">Команда</a>
+    <a href="/site6/contact.html">Контакты</a>
+    <div class="theme-item">
+      <a href="#theme">Тема</a>
+      <div class="dropdown">
+        <a href="#" class="theme-option" data-theme="light">Светлая</a>
+        <a href="#" class="theme-option" data-theme="dark">Темная</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header (Шапка) -->
+  <div class="header">
+    <div class="hamburger">☰</div>
+    <div class="logo"><img src="/site6/logo.png" alt="Logo"></div>
+  </div>
+
+  <!-- First Block (Фоновое видео и текст) -->
+  <div class="first-block">
+    <video autoplay muted loop class="video-background">
+      <source src="/site6/slproject_usplesa_4k_2_7a48cb887e.mp4" type="video/mp4">
+    </video>
+    <div class="text-overlay">DESIGN & ARCHITECTURE</div>
+  </div>
+
+  <!-- Gallery -->
+  <div class="gallery">
+    <div class="gallery-container">
+      <div class="gallery-card">
+        <a href="/site6/2.html"><img src="/site6/b1.png" alt="House 300m²"></a>
+        <div class="caption">HOUSE</div>
+        <div class="area">300m²</div>
+      </div>
+      <div class="gallery-card">
+        <a href="/site6/2.html"><img src="/site6/b2.png" alt="Flat 120m²"></a>
+        <div class="caption">FLAT</div>
+        <div class="area">120m²</div>
+      </div>
+      <div class="gallery-card">
+        <a href="/site6/2.html"><img src="/site6/b3.png" alt="House 250m²"></a>
+        <div class="caption">HOUSE</div>
+        <div class="area">250m²</div>
+      </div>
+      <div class="gallery-card">
+        <a href="/site6/2.html"><img src="/site6/b4.png" alt="House 250m²"></a>
+        <div class="caption">HOUSE</div>
+        <div class="area">250m²</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Big Image and Stats Section -->
+  <div class="big-image-section">
+    <div class="big-image"><img src="/site6/b5.png" alt="design"></div>
+    <div class="stats">
+      <div class="stats-container">
+        <div class="stat-item">
+          <div class="number">0</div>
+          <div class="fixed-label">ЛЕТ</div>
+          <div class="description">ОСНОВАНО В 2015 ГОДУ</div>
+        </div>
+        <div class="stat-item">
+          <div class="number">0</div>
+          <div class="fixed-label">+</div>
+          <div class="description">РЕАЛИЗОВАНО БОЛЕЕ 300 ПРОЕКТОВ</div>
+        </div>
+        <div class="stat-item">
+          <div class="number">0</div>
+          <div class="fixed-label"></div>
+          <div class="description">ПРОФЕССИОНАЛОВ</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="office">
+    <div class="office_title">НАШ ОФИС</div>
+    <div class="office_picture">
+        <img src="/site6/o1.png" alt="" class="office">
+        <img src="/site6/o2.png" alt="" class="office">
+    </div>
+  </div>
+
+
+  <div class="form">
+    <div class="form_container">
+        <div class="form_text">
+            <div class="form_title">Оставьте заявку</div>
+            <div class="form_subtitle">Узнайте больше о наших услугах!</div>
+            <button class="form_btn" id="submitBtn" >Отправить</button>
+        </div>
+        <div class="form_form">
+            <form id="contactForm">
+                <input type="text" name="name" placeholder="Имя" required>
+                <input type="tel" name="phone" placeholder="Телефон" required>
+                <textarea name="comment" placeholder="Комментарий" rows="6" required></textarea>
+            </form>
+        </div>
+    </div>
+  </div>
+
+ <footer class="footer">
+  <div class="footer_container">
+   
+    <div class="footer_logo">
+      <a href="/site6/index.html"><img src="/site6/logo.png" alt="Logo"></a>
+    </div>
+    <div class="footer_contacts">
+      <div class="contact_item">
+        <h3>Адрес</h3>
+        <p>Пресненская наб. 12, Москва Россия</p>
+      </div>
+      <div class="contact_item">
+        <h3>Телефон</h3>
+        <p>+7 912 314-56-35</p>
+      </div>
+      <div class="contact_item">
+        <h3>Email</h3>
+        <p>info@gmail.com</p>
+      </div>
+      <div class="contact_item">
+        <h3>Часы работы</h3>
+        <p>Пн-Пт: 9:00–21:00</p>
+      </div>
+       <nav class="breadcrumbs">
+      <a href="/site6/index.html">Главная</a>
+    </nav>
+    </div>
+    
+  </div>
+  
+</footer>
+
+
+  <script src="/site6/scripts.js"></script>
+</body>
+</html>

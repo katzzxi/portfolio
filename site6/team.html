@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design & Architecture</title>
+   <link rel="icon" href="/site6/Black.svg" type="image/x-icon">
+  <link rel="stylesheet" href="/site6/styles.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <div id="sidebar" class="sidebar">
+    <div class="close-btn">×</div>
+    <a href="/site6/index.html">Главная</a>
+    <a href="/site6/2.html">Проекты</a>
+    <a href="/site6/team.html">Команда</a>
+    <a href="/site6/contact.html">Контакты</a>
+    <div class="theme-item">
+      <a href="#theme">Тема</a>
+      <div class="dropdown">
+        <a href="#" class="theme-option" data-theme="light">Светлая</a>
+        <a href="#" class="theme-option" data-theme="dark">Темная</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header (Шапка) -->
+  <div class="header">
+    <div class="hamburger">☰</div>
+    <div class="logo"><img src="/site6/logo.png" alt="Logo"></div>
+  </div>
+
+  <!-- First Block (Фоновое видео и текст) -->
+  <div class="first-block">
+    <video autoplay muted loop class="video-background" style="filter: brightness(60%);" >
+      <source src="/site6/B3DmQyyZ.mp4" type="video/mp4">
+    </video>
+    <div class="text-overlay">TEAM</div>
+  </div>
+
+
+
+
+  <div class="contact_main">
+    <img src="/site6/c2.png" alt="">
+    <div class="contact_text">Александр <br> Медведев
+    <br><br>Основатель
+    </div>
+    
+    
+  </div>
+
+
+
+
+ <section class="team-slider">
+  <div class="slider-container">
+    <div class="slider-wrapper">
+      <div class="slider-card">
+        <img src="/site6/t1.png" alt="Team Member 1">
+        <div class="slider-info">
+          <h3>Анна Иванова</h3>
+          <p>Ведущий дизайнер</p>
+        </div>
+        <div class="slider-overlay">
+          <p>Специалист по современным интерьерам с 10-летним опытом.</p>
+        </div>
+      </div>
+      <div class="slider-card">
+        <img src="/site6/t2.png" alt="Team Member 2">
+        <div class="slider-info">
+          <h3>Михаил Смирнов</h3>
+          <p>Архитектор</p>
+        </div>
+        <div class="slider-overlay">
+          <p>Создаёт уникальные архитектурные решения для жилых и коммерческих проектов.</p>
+        </div>
+      </div>
+      <div class="slider-card">
+        <img src="/site6/t3.png" alt="Team Member 3">
+        <div class="slider-info">
+          <h3>Екатерина Петрова</h3>
+          <p>Менеджер проектов</p>
+        </div>
+        <div class="slider-overlay">
+          <p>Обеспечивает точное выполнение проектов в срок и в рамках бюджета.</p>
+        </div>
+      </div>
+      <div class="slider-card">
+        <img src="/site6/t4.png" alt="Team Member 4">
+        <div class="slider-info">
+          <h3>Дмитрий Кузнецов</h3>
+          <p>Инженер-конструктор</p>
+        </div>
+        <div class="slider-overlay">
+          <p>Разрабатывает надёжные конструкции для сложных архитектурных проектов.</p>
+        </div>
+      </div>
+      <div class="slider-card">
+        <img src="/site6/t5.png" alt="Team Member 5">
+        <div class="slider-info">
+          <h3>Ольга Соколова</h3>
+          <p>Дизайнер интерьеров</p>
+        </div>
+        <div class="slider-overlay">
+          <p>Создаёт уютные и функциональные пространства для жизни и работы.</p>
+        </div>
+      </div>
+    </div>
+    <button class="slider-prev">❮</button>
+    <button class="slider-next">❯</button>
+  </div>
+</section>
+
+
+
+
+  <!-- Gallery -->
+  <div class="gallery">
+    <div class="gallery-container1">
+      <div class="gallery-card1">
+        <img src="/site6/t6.jpg" alt="House 300m²">
+      </div>
+      <div class="gallery-card1">
+        <img src="/site6/t7.jpg" alt="Flat 120m²">
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="office">
+    <div class="office_title">НАШ ОФИС</div>
+    <div class="office_picture">
+        <img src="/site6/o1.png" alt="" class="office">
+        <img src="/site6/o2.png" alt="" class="office">
+    </div>
+  </div>
+
+
+  <div class="form">
+    <div class="form_container">
+        <div class="form_text">
+            <div class="form_title">Оставьте заявку</div>
+            <div class="form_subtitle">Узнайте больше о наших услугах!</div>
+            <button class="form_btn" id="submitBtn" >Отправить</button>
+        </div>
+        <div class="form_form">
+            <form id="contactForm">
+                <input type="text" name="name" placeholder="Имя" required>
+                <input type="tel" name="phone" placeholder="Телефон" required>
+                <textarea name="comment" placeholder="Комментарий" rows="6" required></textarea>
+            </form>
+        </div>
+    </div>
+  </div>
+
+ <footer class="footer">
+  <div class="footer_container">
+   
+    <div class="footer_logo">
+      <a href="/site6/index.html"><img src="/site6/logo.png" alt="Logo"></a>
+    </div>
+    <div class="footer_contacts">
+      <div class="contact_item">
+        <h3>Адрес</h3>
+        <p>Пресненская наб. 12, Москва Россия</p>
+      </div>
+      <div class="contact_item">
+        <h3>Телефон</h3>
+        <p>+7 912 314-56-35</p>
+      </div>
+      <div class="contact_item">
+        <h3>Email</h3>
+        <p>info@gmail.com</p>
+      </div>
+      <div class="contact_item">
+        <h3>Часы работы</h3>
+        <p>Пн-Пт: 9:00–21:00</p>
+      </div>
+       <nav class="breadcrumbs">
+            <a href="/site6/index.html">Главная</a>
+            <span class="separator">></span>
+            <span>Команда</span>
+          </nav>
+    </div>
+    
+  </div>
+  
+</footer>
+
+
+  <script src="/site6/scripts.js"></script>
+</body>
+</html>
