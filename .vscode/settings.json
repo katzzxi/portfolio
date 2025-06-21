@@ -1,0 +1,6 @@
+{
+  "previewServer.root": ".",
+  "previewServer.port": 5500,
+  "previewServer.browse": true,
+  "previewServer.base": "/portfolio/"
+}
